@@ -1,0 +1,9 @@
+n = "4C6520666C6167206465206365206368616C6C656E6765206573743A203261633337363438316165353436636436383964356239313237356433323465"
+
+# 1. 轉 bytes
+bytes_data = bytes.fromhex(n)
+
+# 2. 解碼成 utf-8 字串
+decoded_str = bytes_data.decode("utf-8")
+
+print(decoded_str)
